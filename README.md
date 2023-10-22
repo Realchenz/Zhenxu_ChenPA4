@@ -1,1 +1,4 @@
-# Zhenxu_ChenPA4
+# Game of War
+
+## Authors
+- [Zhenxu Chen](https://github.com/Realchenz)
