@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c924f72-4eb2-4bab-92ea-32630971aa28" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Alias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Casino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
-    </list>
+    <list default="true" id="9c924f72-4eb2-4bab-92ea-32630971aa28" name="更改" comment="modification of gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -40,6 +30,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -76,11 +67,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698001637170</updated>
-      <workItem from="1698001638259" duration="386000" />
+      <workItem from="1698001638259" duration="942000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit of pa4">
+      <option name="closed" value="true" />
+      <created>1698002277864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698002277864</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modification of gitignore">
+      <option name="closed" value="true" />
+      <created>1698002516956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698002516956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit of pa4" />
+    <MESSAGE value="modification of gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification of gitignore" />
   </component>
 </project>
