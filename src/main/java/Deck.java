@@ -6,54 +6,54 @@
  * @assignment PA4
  */
 public class Deck {
-    private Card[] deck; //declare the deck
-    private Card[] discard; //declare the discard pile
+    private Card[] deckPile; //declare the deck
+    private Card[] discardPile; //declare the discard pile
     /**
      * Constructor:
      * initialize the deck and the discard pile
      */
     public Deck() {
-        this.deck = new Card[52];
-        for (int i = 0; i < this.deck.length; i++) {
+        this.deckPile = new Card[52];
+        for (int i = 0; i < this.deckPile.length; i++) {
             if (i < 13) {
-                this.deck[i] = new Card("Hearts", i + 1);
+                this.deckPile[i] = new Card("Hearts", i + 1);
             } else if (i < 26) {
-                this.deck[i] = new Card("Diamonds", i - 12);
+                this.deckPile[i] = new Card("Diamonds", i - 12);
             } else if (i < 39) {
-                this.deck[i] = new Card("Clubs", i - 25);
+                this.deckPile[i] = new Card("Clubs", i - 25);
             } else {
-                this.deck[i] = new Card("Spades", i - 38);
+                this.deckPile[i] = new Card("Spades", i - 38);
             }
         }
-        this.discard = new Card[52];
+        this.discardPile = new Card[52];
     }
     /**
      * shuffle the deck by Fisher–Yates shuffle algorithm
      */
     public void shuffle() {
-        for (int i = 0; i < this.deck.length-1; i++) {
-            int random = (int) (i + Math.random() * (this.deck.length-i));
-            if(deck[i] == null || deck[random] == null) {
+        for (int i = 0; i < this.deckPile.length-1; i++) {
+            int random = (int) (i + Math.random() * (this.deckPile.length-i));
+            if(deckPile[i] == null || deckPile[random] == null) {
                 continue;
             }
-            Card temp = this.deck[i];
-            this.deck[i] = this.deck[random];
-            this.deck[random] = temp;
+            Card temp = this.deckPile[i];
+            this.deckPile[i] = this.deckPile[random];
+            this.deckPile[random] = temp;
         }
     }
     /**
      * @return the next card in the deck
      */
     public Card drawNextCard() {
-        for (int i = 0; i < this.deck.length; i++) {
-            if (this.deck[i] != null) {
-                Card temp = this.deck[i];
-                this.deck[i] = null;
+        for (int i = 0; i < this.deckPile.length; i++) {
+            if (this.deckPile[i] != null) {
+                Card temp = this.deckPile[i];
+                this.deckPile[i] = null;
                 return temp;
             }
         }
-        this.deck = discard;
-        discard = new Card[52];
+        this.deckPile = discardPile;
+        discardPile = new Card[52];
         shuffle();
         return drawNextCard();
     }
@@ -63,9 +63,9 @@ public class Deck {
      * the card to be discarded
      */
     public void discard(Card card) {
-        for (int i = 0; i < this.discard.length; i++) {
-            if (this.discard[i] == null) {
-                this.discard[i] = card;
+        for (int i = 0; i < this.discardPile.length; i++) {
+            if (this.discardPile[i] == null) {
+                this.discardPile[i] = card;
                 break;
             }
         }
